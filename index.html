@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Information -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Page Title and Icon -->
+    <link rel="icon" href="./assets/logo.png">
+    <title>Expense Splitter</title>
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Image -->
+    <img src="assets/background.jpeg" id="backgroundImage"/>
+    
+    <!-- Header Section -->
+    <header>
+        <div class="HeaderContainer">
+            <img src="assets/logo.png" id="logo" alt="Expense Splitter Logo" />
+            <h1>Expense Splitter</h1>
+            <i class="fa-regular fa-circle-user user"></i>
+        </div>
+    </header>
+    
+    <!-- Main Content Container -->
+    <div class="MainContainer">
+        
+        <!-- Text/Information Section -->
+        <div class="TextSection">
+            <h1>Expense Calculator</h1>
+            <p>Quickly and easily calculate with our free expense calculator fair settlement amounts — ideal for splitting bills and calculating group costs.</p>
+            <p>This online calculator is a simplified demo showing how a few quick entries can replace complicated notes and manual math.</p>
+            <p>The expense-sharing app is a complete solution with many practical features for managing and splitting expenses.</p>
+            <p>The smart expense tracker makes splitting costs and bills easy— perfect for group trips, sailing adventures, shared households, or your next vacation with friends.</p>
+        </div>
+        
+        <!-- Calculator Section -->
+        <div class="CalculatorSection">
+            <h2>Split costs with our Calculator</h2>
+            
+            <!-- People Input Box -->
+            <div id="People" class="calculatorBox">
+                <div class="calculatorBoxHeadings">
+                    <h3>People</h3>
+                </div>
+                <div class="calculatorBoxItems">
+                    <!-- Input field for entering person's name -->
+                    <input placeholder="Enter name" id="peopleNameInput"/>
+                    <!-- Button to add person -->
+                    <i class="fa-solid fa-plus addPerson"></i>
+                </div>
+                <!-- Container for dynamically added people -->
+                <div id="peopleBox" class="calculatorBoxItems">
+                </div>
+            </div>
+            
+            <!-- Expenses Input Box -->
+            <div id="Expenses" class="calculatorBox">
+                <div class="calculatorBoxHeadings">
+                    <h3>Expenses</h3>
+                </div>
+                
+                <!-- Payer Selection Dropdown -->
+                <div class="calculatorBoxItems">
+                    <h4>Who paid?</h4>
+                    <label for="people"></label>
+                    <select id="peopleDropdownMenu" name="people">
+                        <option value="Select Person">Select Person...</option>
+                    </select>
+                </div>
+                
+                <!-- Expense Details: Checkboxes, Amount Input, and Add Button -->
+                <div class="calculatorBoxItems expenseDetails">
+                    <h4>Who was it paid for? (multiple possible)</h4>
+                    <!-- Container for dynamically added checkboxes -->
+                    <div id="checkboxes"></div>
+                    
+                    <!-- Expense amount input field -->
+                    <input id="expenseAmountInput" min="0" placeholder="    0.00   &#8377" type="number"/>
+                    
+                    <!-- Button to add expense -->
+                    <button id="addExpenseButton" style="color: white;">+Add Expense</button>
+                </div>
+            </div>
+            
+            <!-- Settlement Display Box -->
+            <div id="Settlement" class="calculatorBox">
+                <div class="calculatorBoxHeadings">
+                    <h3>Settlement</h3>
+                </div>
+                <!-- Container for displaying settlement results -->
+                <div id="settlementBox" class="calculatorBoxItems">
+                    <p>Add people and expenses to see the result.</p>
+                </div>
+            </div>
+            
+            <!-- Reset Button Container -->
+            <div class="calculatorBox resetButtonContainer">
+                <button id="resetButton" style="color: white;">Reset Calculator</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer Section -->
+    <footer>
+        <div class="footerContainer">
+            <p>Created by Abhishek Verma | <a href="https://github.com/Warrior5301">GitHub</a> | <a href="https://www.linkedin.com/in/abhishek-verma-97b7343a1/">LinkedIn</a></p>
+            <p>Thanks for using our product.</p>
+            <p>© 2026 Expense Splitter. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <!-- External Scripts -->
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/d495ff59e2.js" crossorigin="anonymous"></script>
+    <!-- Main Application Script -->
+    <script src="app.js"></script>
+</body>
+</html>

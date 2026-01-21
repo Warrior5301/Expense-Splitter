@@ -1,0 +1,282 @@
+/* ========================================
+   GENERAL STYLES
+   ======================================== */
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Background Image */
+#backgroundImage {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    object-fit: cover;
+}
+
+/* ========================================
+   HEADER STYLES
+   ======================================== */
+
+.HeaderContainer {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem 2rem;
+    border-bottom: 0.1rem solid gray;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: white;
+    opacity: 0.85;
+}
+
+#logo {
+    padding-top: 0.4rem;
+    height: 4rem;
+    width: 4rem;
+}
+
+.user {
+    position: absolute;
+    right: 2rem;
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+/* ========================================
+   MAIN CONTAINER LAYOUT
+   ======================================== */
+
+.MainContainer {
+    display: flex;
+    gap: 2rem;
+}
+
+/* Text Section - Left Side */
+.TextSection {
+    padding-left: 10rem;
+    width: 30rem;
+    font-size: 1.8rem;
+}
+
+.TextSection p {
+    opacity: 0.8;
+}
+
+/* Calculator Section - Right Side */
+.CalculatorSection {
+    width: auto;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+/* ========================================
+   CALCULATOR BOX STYLES
+   ======================================== */
+
+.calculatorBox {
+    border: 0.05rem solid gray;
+    width: 35rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5rem;
+    box-shadow: 0rem 0.2rem 0.5rem rgba(0, 0, 0, 0.253);
+}
+
+.calculatorBox h3 {
+    text-align: center;
+}
+
+/* People Box */
+#People {
+    height: auto;
+    padding-bottom: 2rem;
+}
+
+/* Expenses Box */
+#Expenses {
+    height: auto;
+    margin-top: 1.5rem;
+    padding-bottom: 2rem;
+}
+
+/* Settlement Box */
+#Settlement {
+    height: auto;
+    margin-top: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+/* Box Heading Styling */
+.calculatorBoxHeadings {
+    border-radius: 0.5rem 0.5rem 0 0;
+    background-color: rgba(241, 242, 246, 0.973);
+}
+
+/* Box Items Padding */
+.calculatorBoxItems {
+    padding: 1rem 1.5rem 0rem 1.5rem;
+}
+
+/* ========================================
+   PEOPLE SECTION STYLES
+   ======================================== */
+
+#peopleNameInput {
+    width: 85%;
+    height: 2.5rem;
+    font-size: large;
+    border-radius: 0.5rem;
+    border-color: rgba(198, 197, 204, 0.914);
+    padding-left: 0.75rem;
+}
+
+/* Add Person Button */
+.addPerson {
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-left: 1rem;
+    margin-top: 0.65rem;
+}
+
+/* People List Display */
+#peopleBox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+/* Individual Person Entry */
+.personEntry {
+    height: auto;
+    width: fit-content;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    border: 0.05rem solid gray;
+    border-radius: 0.5rem;
+    text-align: center;
+    white-space: nowrap;
+    box-shadow: 0rem 0.1rem 0.3rem rgba(0, 0, 0, 0.2);
+}
+
+/* Remove Person Icon */
+.cutLogo {
+    margin-left: 0.5rem;
+    color: black;
+    cursor: pointer;
+}
+
+/* ========================================
+   EXPENSES SECTION STYLES
+   ======================================== */
+
+#peopleDropdownMenu {
+    width: 90%;
+    height: 2.5rem;
+    font-size: large;
+    border-radius: 0.5rem;
+    border-color: rgba(198, 197, 204, 0.914);
+}
+
+/* Checkboxes Container */
+#checkboxes {
+    height: 6rem;
+    width: 90%;
+    overflow-y: auto;
+    border: 0.05rem solid gray;
+    border-radius: 0.5rem;
+}
+
+/* Expense Amount Input */
+#expenseAmountInput {
+    margin-top: 1rem;
+    width: 8rem;
+    height: 2.5rem;
+    font-size: large;
+    border-radius: 0.5rem;
+    border-color: rgba(198, 197, 204, 0.914);
+    padding-left: 0.75rem;
+}
+
+/* Add Expense Button */
+#addExpenseButton {
+    width: 70%;
+    height: 2.75rem;
+    font-size: large;
+    border-radius: 0.5rem;
+    border-color: rgba(198, 197, 204, 0.914);
+    background-color: #2196f3;
+    cursor: pointer;
+}
+
+/* Expense Entry Display */
+.expenseEntry {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border: 0.05rem solid gray;
+    border-radius: 0.5rem;
+    box-shadow: 0rem 0.1rem 0.3rem rgba(0, 0, 0, 0.2);
+    width: fit-content;
+    text-wrap: wrap;
+}
+
+/* ========================================
+   SETTLEMENT SECTION STYLES
+   ======================================== */
+
+#settlementBox {
+    height: auto;
+    margin: 1rem;
+    padding-bottom: 1rem;
+    border: 0.05rem dashed gray;
+    border-radius: 0.5rem;
+}
+
+/* Settlement Entry Display */
+.settlementEntry {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border: 0.05rem solid gray;
+    border-radius: 0.5rem;
+    box-shadow: 0rem 0.1rem 0.3rem rgba(0, 0, 0, 0.2);
+    width: fit-content;
+    text-wrap: wrap;
+}
+
+/* ========================================
+   BUTTON SECTION STYLES
+   ======================================== */
+
+.resetButtonContainer {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Reset Button */
+#resetButton {
+    height: 2.75rem;
+    font-size: large;
+    border-radius: 0.5rem;
+    border-color: rgba(198, 197, 204, 0.914);
+    background-color: #f44336;
+    box-shadow: 0rem 0.1rem 0.3rem rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+/* ========================================
+   FOOTER STYLES
+   ======================================== */
+
+.footerContainer {
+    text-align: center;
+    padding: 1rem;
+    border-top: 0.1rem solid gray;
+    margin-top: 2rem;
+    font-size: 1rem;
+    color: gray;
+}
